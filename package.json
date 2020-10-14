@@ -1,3 +1,4 @@
+
 {
   "name": "react-phone-input-2",
   "version": "2.13.8",
@@ -8,7 +9,7 @@
     "test": "jest",
     "start": "TARGET=dev:js NODE_ENV=development webpack-dev-server --progress",
     "start:css": "TARGET=dev:css NODE_ENV=development webpack-dev-server --progress",
-    "build": "npm run build:js && npm run build:css",
+    "build": "npm run build:css && npm run build:js",
     "build:js": "TARGET=build:js NODE_ENV=production webpack -p --progress",
     "build:css": "TARGET=build:css NODE_ENV=production webpack -p --progress && rm ./main.js",
     "prepublishOnly": "npm run build",

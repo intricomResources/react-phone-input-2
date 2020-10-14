@@ -29,10 +29,10 @@ const common = {
           path.resolve(ROOT_PATH, 'test')
         ]
       },
-      {
-        test: /\.png.*$/,
-        loaders: ['url-loader?limit=100000&mimetype=image/png'],
-        exclude: /node_modules/
+
+ {
+        test: /\.(ttf|eot|svg|png|jpg|gif|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader'
       }
     ]
   }
